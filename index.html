@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        ol {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        img {
+            display: block;
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        form{
+            margin: 10px;
+            
+        }
+        fieldset {
+            border: 2px solid #007bff;
+            padding: 15px;
+            border-radius: 8px;
+            background: white;
+            margin-top: 20px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+           
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .button-container a:hover {
+            background: #0056b3;
+        }
+        .check{
+            display:flex
+        }
+        .radio, label{
+            display:flex;
+            margin:5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Youth portal</h1>
+     <form>
+        <fieldset>
+            <legend>Registration</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" minlength="5" required>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+        </fieldset>
+     </form>
+    <div class="button-container">
+        <a href="#">Submit</a>
+    </div>
+    <ol type="I">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+    </ol>
+    <img src="road.jpg" alt="My Image">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Mwangi</td>
+            <td>24, Thika</td>
+            <td>0756345678</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Cynthia Waithera</td>
+            <td>57, Kiambu</td>
+            <td>0745897243</td>
+            <td>waithera@gmail.com</td>
+        </tr>
+        <tr>
+            <td>James Kimani</td>
+            <td>59, Kisumu</td>
+            <td>0756342576</td>
+            <td>kimani@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Philip Kangethe</td>
+            <td>45, Naivasha</td>
+            <td>0763245867</td>
+            <td>kangethe@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Josphat Ndungu</td>
+            <td>39, Eldoret</td>
+            <td>0790654397</td>
+            <td>ndungu@gmail.com</td>
+        </tr>
+    </table>
+    <div class="radio">
+    <label>Gender:</label>
+    <label>
+        <input type="radio" name="gender" value="male"> Male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female"> Female
+    </label>
+    <label>
+        <input type="radio" name="gender" value="other"> Other
+    </label>
+    </div>
+     <div class="check">
+        <label>Interests:</label>
+    <label>
+        <input type="checkbox" name="interest" value="IT"> IT
+    </label>
+    <label>
+        <input type="checkbox" name="interest" value="Business"> Business
+    </label>
+    <label>
+        <input type="checkbox" name="interest" value="Medicine"> Medicine
+    </label>
+     </div>
+
+    <label for="country">Country:</label>
+    <select id="country">
+        <option>Kenya</option>
+        <option>Uganda</option>
+        <option>Tanzania</option>
+        <option>Somalia</option>      
+    </select>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" placeholder="Write your comments here"></textarea>
+
+</body>
+</html>
